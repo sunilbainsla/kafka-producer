@@ -7,7 +7,7 @@
   </appender>
 
   <logger name="com.sunilbainsla" level="INFO" />
-  <logger name="org.springframework" level="WARN" />
+  <logger name="org.springframework" level="DEBUG" />
 
 
   <root level="WARN">

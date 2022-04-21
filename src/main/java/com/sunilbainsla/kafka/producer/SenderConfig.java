@@ -28,6 +28,10 @@ public class SenderConfig {
     props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
         StringSerializer.class);
 
+    props.put(ProducerConfig.ACKS_CONFIG, "all");
+    props.put(ProducerConfig.RETRIES_CONFIG, 3);
+    //props.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, 100);
+
     return props;
   }
 
