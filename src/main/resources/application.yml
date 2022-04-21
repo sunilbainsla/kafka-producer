@@ -1,2 +1,5 @@
 kafka:
   bootstrap-servers: localhost:9092
+logging.level:
+  org.springframework: DEBUG
+  com.sunilbainsla: DEBUG
