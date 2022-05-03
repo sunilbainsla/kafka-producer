@@ -32,6 +32,9 @@ public class SenderConfig {
         StringSerializer.class);
 
     props.put(ProducerConfig.ACKS_CONFIG, "all");
+    //default is 0 and 2147483647>2.3
+  //  Users should generally prefer to leave this config unset and instead use delivery.
+    //  timeout.ms to control retry behavior.
     props.put(ProducerConfig.RETRIES_CONFIG, Integer.toString(Integer.MAX_VALUE));
     //default RETRY_BACKOFF_MS_CONFIG 100ms The amount of time to wait before attempting to retry a failed request to a given topic partition
     //>=request.timeout.ms + linger.ms +RETRY_BACKOFF_MS_CONFIG
