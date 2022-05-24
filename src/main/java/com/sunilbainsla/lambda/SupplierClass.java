@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 public class SupplierClass {
 
     public static void main(String[] args) {
-
+        // does not accept any input but return out put
         Supplier<LocalDateTime> s = () -> LocalDateTime.now();
         LocalDateTime time = s.get();
         System.out.println(time);
