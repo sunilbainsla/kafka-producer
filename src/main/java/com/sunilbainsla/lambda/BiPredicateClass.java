@@ -7,7 +7,8 @@ public class BiPredicateClass {
     public static void main(String[] args) {
 
         //BiPredicate<Integer,Integer> biPredicate=(a,b) -> a+b>10;
-        BiPredicate<Integer,Integer> biPredicate=(a,b) -> a+b>10;
-        System.out.println(biPredicate.test(4,5));
+        BiPredicate<Integer, Integer> biPredicate = (a, b) -> a + b > 10;
+        System.out.println(biPredicate.test(4, 5));
+        
     }
 }
